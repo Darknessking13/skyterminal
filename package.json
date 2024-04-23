@@ -1,0 +1,49 @@
+{
+  "name": "skyterminal",
+  "version": "0.0.9",
+  "repository": "",
+  "description": "allow you to format your text with ansi colors in terminal",
+  "module": "index.mjs",
+  "types": "index.d.ts",
+  "main": "index.js",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs",
+      "require": "./index.js"
+    },
+    "./colors": {
+      "types": "./colors.d.ts",
+      "import": "./colors.mjs",
+      "require": "./colors.js"
+    }
+  },
+  "files": [
+    "*.d.ts",
+    "colors.*",
+    "index.*"
+  ],
+  "author": {
+    "name": "i._.become_a_devil",
+    "email": "ratulefad@gmail.com"
+  },
+  "scripts": {
+    "build": "node build",
+    "test": "uvu -r esm -i utils -i xyz"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "keywords": [
+    "ansi",
+    "color",
+    "colors",
+    "console",
+    "terminal"
+  ],
+  "devDependencies": {
+    "esm": "3.2.25",
+    "uvu": "0.3.3"
+  }
+}
